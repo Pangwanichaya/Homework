@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        height: 200vh;
+      }
+      .big {
+        height: 50%;
+        width: 50%;
+      }
+      .small {
+        height: 25%;
+        width: 25%;
+      }
+      .inside {
+        height: 10%;
+        width: 10%;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .relative {
+        position: relative;
+      }
+      .fixed {
+        position: fixed;
+      }
+      .top {
+        top: 0;
+      }
+      .right {
+        right: 0;
+      }
+      .bottom {
+        bottom: 0;
+      }
+      .left {
+        left: 0;
+      }
+      .center {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .pink {
+        background-color: deeppink;
+      }
+      .white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="absolute red small top left"></div>
+      <div class="absolute green small top right"></div>
+      <div class="absolute blue small bottom left"></div>
+      <div class="absolute yellow small bottom right"></div>
+    </div>
+    <div>
+      <div class="fixed white big center">
+        <div class="fixed red inside left top"></div>
+        <div class="fixed green inside right top"></div>
+        <div class="fixed blue inside left bottom"></div>
+        <div class="fixed yellow inside right bottom"></div>
+        <div class="fixed pink inside center"></div>
+      </div>
+    </div>
+  </body>
+</html>
